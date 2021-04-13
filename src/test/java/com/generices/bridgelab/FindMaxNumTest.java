@@ -21,32 +21,4 @@ public class FindMaxNumTest {
         Integer result = maxNumber.findMaximum(intArray);
         Assertions.assertEquals(Integer.valueOf(5), result);
     }
-
-    @Test
-    public void whenGivenThreeNumbersAtThirdNumberIsMaxShouldReturnSameNumber() {
-        Double[] doubleArray = {5.9, 2.1, 7.6};
-        Double result = maxNumber.findMaximum(doubleArray);
-        Assertions.assertEquals(Double.valueOf(7.6), result);
-    }
-
-    @Test
-    public void whenGivenThreeStringsAndFirstStringIsMaxShouldReturnSameNumber() {
-        String[] stringArray = {"Grapes", "Apple", "Banana"};
-        String result = maxNumber.findMaximum(stringArray);
-        Assertions.assertEquals("Grapes", result);
-    }
-
-    @Test
-    public void whenGivenThreeStringsAndSecondStringIsMaxShouldReturnSameNumber() {
-        String[] stringArray = {"Apple", "Orange", "Banana"};
-        String result = maxNumber.findMaximum(stringArray);
-        Assertions.assertEquals("Orange", result);
-    }
-
-    @Test
-    public void whenGivenThreeStringsAndThreeStringIsMaxShouldReturnSameNumber() {
-        String[] stringArray = {"Apple", "Banana", "Guava"};
-        String result = maxNumber.findMaximum(stringArray );
-        Assertions.assertEquals("Guava", result);
-    }
 }
