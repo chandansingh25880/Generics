@@ -9,14 +9,14 @@ public class FindMaxNumTest {
    using compareTo method. */
 
     @Test
-    public void whenGivenThreeNumbersAtFirstNumberIsMaxShouldReturnSameNumber() {
+    public void whenGivenThreeNumbersAtFirstNumberIsMaxShouldReturnMaxFirstPosition() {
         Integer[] intArray = {7, 6, 5};
         Integer result = maxNumber.findMaximum(intArray);
         Assertions.assertEquals(Integer.valueOf(7), result);
     }
 
     @Test
-    public void whenGivenThreeNumbersAtSecondNumberIsMaxShouldReturnSameNumber() {
+    public void whenGivenThreeNumbersAtSecondNumberIsMaxShouldReturnMaxSecondPosition() {
         Integer[] intArray = {4, 5, 1};
         Integer result = maxNumber.findMaximum(intArray);
         Assertions.assertEquals(Integer.valueOf(5), result);
