@@ -23,7 +23,7 @@ public class FindMaxNumTest {
     }
 
     @Test
-    public void whenGivenThreeNumbersAtSecondNumberIsMaxShouldReturnMaxThirdPosition() {
+    public void whenGivenThreeNumbersAtThirdNumberIsMaxShouldReturnMaxThirdPosition() {
         Integer[] intArray = {4, 5, 6};
         Integer result = maxNumber.findMaximum(intArray);
         Assertions.assertEquals(Integer.valueOf(6), result);
