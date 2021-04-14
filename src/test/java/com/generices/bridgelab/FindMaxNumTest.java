@@ -30,9 +30,41 @@ public class FindMaxNumTest {
     }
 
     @Test
-    public void whenGivenThreeFloatNumberAtShouldReturnMaxNumber() {
+    public void whenGivenThreeFloatNumberAtFirstNumberIsMaxShouldReturnMaxFirstPosition() {
         Double[] doubleArray = {5.9, 2.1, 7.6};
         Double result = maxNumber.findMaximum(doubleArray);
         Assertions.assertEquals(Double.valueOf(7.6), result);
+    }
+    @Test
+    public void whenGivenThreeFloatNumberAtSecondNumberIsMaxShouldReturnMaxSecondPosition() {
+        Double[] doubleArray = {5.9, 8.5, 7.6};
+        Double result = maxNumber.findMaximum(doubleArray);
+        Assertions.assertEquals(Double.valueOf(8.5), result);
+    }
+    @Test
+    public void whenGivenThreeFloatNumberAtThirdNumberIsMaxShouldReturnMaxThirdPosition() {
+        Double[] doubleArray = {5.9, 2.1, 9.6};
+        Double result = maxNumber.findMaximum(doubleArray);
+        Assertions.assertEquals(Double.valueOf(9.6), result);
+    }
+    @Test
+    public void whenGivenThreeStringsAndFirstStringIsMaxShouldReturnFirstPosition() {
+        String[] stringArray = {"Grapes", "Apple", "Banana"};
+        String result = maxNumber.findMaximum(stringArray);
+        Assertions.assertEquals("Grapes", result);
+    }
+
+    @Test
+    public void whenGivenThreeStringsAndSecondStringIsMaxShouldReturnSecondPosition() {
+        String[] stringArray = {"Apple", "Orange", "Banana"};
+        String result = maxNumber.findMaximum(stringArray);
+        Assertions.assertEquals("Orange", result);
+    }
+
+    @Test
+    public void whenGivenThreeStringsAndThirdStringIsMaxShouldReturnThirdPosition() {
+        String[] stringArray = {"Apple", "Banana", "Guava"};
+        String result = maxNumber.findMaximum(stringArray );
+        Assertions.assertEquals("Guava", result);
     }
 }
